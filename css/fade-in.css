@@ -1,0 +1,16 @@
+* { /* asterisk selects all html elements  */
+    animation: fadeIn 2s /* how long the animation takes */
+}
+
+@keyframes fadeIn { /* keyframes define the start and end of animation */
+
+    from { /* starting point */
+        opacity: 0; /* start completely transparent */
+        transform: translateX(-1vw) /* start a little to the left */
+    }
+
+    to { /* ending point */
+        opacity: 1; /* end completely solid */
+        transform: translateX(0) /* end where html elements would normally be */
+    }
+}
