@@ -1,3 +1,9 @@
+:root {
+  --inversion-orange: #FF682A;
+  --inversion-purple: #882cf8;
+  --dark-grey: #242424;
+}
+
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 html {
   box-sizing: border-box;
@@ -15,6 +21,12 @@ html {
 body {
   margin: 0;
 }
+
+input,
+textarea {
+  background-color: var(--dark-grey);
+}
+
 article,
 aside,
 details,
@@ -50,6 +62,10 @@ template {
 }
 a {
   background-color: transparent;
+  border-bottom: 3px solid; /* thickness of color gradient */
+
+  /* add color gradient to a tags */
+  border-image: linear-gradient(70deg,var(--inversion-orange) 35%,var(--inversion-purple)) 1;
 }
 a:active,
 a:hover {
@@ -322,6 +338,11 @@ a {
 .w3-btn:disabled:hover {
   box-shadow: none;
 }
+
+.submit-btn {
+  background-color: var(--inversion-orange);
+}
+
 .w3-badge,
 .w3-tag {
   background-color: #000;
@@ -1300,7 +1321,7 @@ a {
 .w3-teal,
 .w3-hover-teal:hover {
   color: #fff !important;
-  background-color: #009688 !important;
+  background-color: var(--inversion-purple) !important; /* color of middle square in contact us section */
 }
 .w3-yellow,
 .w3-hover-yellow:hover {
@@ -1309,8 +1330,8 @@ a {
 }
 .w3-white,
 .w3-hover-white:hover {
-  color: #000 !important;
-  background-color: #fff !important;
+  color: var(--inversion-orange) !important; /* color of text under pictures */
+  background-color: var(--dark-grey) !important; /* background color of text area under pictures */
 }
 .w3-black,
 .w3-hover-black:hover {
@@ -1321,22 +1342,27 @@ a {
 .w3-hover-grey:hover,
 .w3-gray,
 .w3-hover-gray:hover {
-  color: #000 !important;
-  background-color: #9e9e9e !important;
+  color: white !important; /* additional links text color */
+  background-color: var(--inversion-purple) !important; /* color of rectangle around additional links */
 }
+
+.add-links-header {
+  color: var(--inversion-orange);
+}
+
 .w3-light-grey,
 .w3-hover-light-grey:hover,
 .w3-light-gray,
 .w3-hover-light-gray:hover {
-  color: #000 !important;
-  background-color: #f1f1f1 !important;
+  color: var(--inversion-orange) !important; /* changes color of text located within the body tag */
+  background-color: #000000 !important; /* background color of website */
 }
 .w3-dark-grey,
 .w3-hover-dark-grey:hover,
 .w3-dark-gray,
 .w3-hover-dark-gray:hover {
   color: #fff !important;
-  background-color: #616161 !important;
+  background-color: var(--dark-grey) !important;
 }
 .w3-pale-red,
 .w3-hover-pale-red:hover {
@@ -1462,7 +1488,7 @@ a {
 .w3-hover-text-light-grey:hover,
 .w3-text-light-gray,
 .w3-hover-text-light-gray:hover {
-  color: #f1f1f1 !important;
+  color: var(--inversion-orange) !important; /* color of contact us icons */
 }
 .w3-text-dark-grey,
 .w3-hover-text-dark-grey:hover,
