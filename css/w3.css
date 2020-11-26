@@ -1,7 +1,8 @@
 :root {
-  --inversion-orange: #FF682A;
+  --inversion-orange: #ff682a;
   --inversion-purple: #882cf8;
   --dark-grey: #242424;
+  --linkBorderHeight: 1;
 }
 
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
@@ -62,10 +63,17 @@ template {
 }
 a {
   background-color: transparent;
-  border-bottom: 3px solid; /* thickness of color gradient */
+  border-bottom: 1px solid; /* thickness of color gradient */
+  text-decoration: none; /* remove underline from link */
 
   /* add color gradient to a tags */
   border-image: linear-gradient(70deg,var(--inversion-orange) 35%,var(--inversion-purple)) 1;
+
+  /* size of color gradient */
+  border-left-width: 0;
+  border-bottom-width: var(--linkBorderHeight);
+  border-right-width: 0;
+  border-top-width: 0;
 }
 a:active,
 a:hover {
@@ -1321,7 +1329,9 @@ a {
 .w3-teal,
 .w3-hover-teal:hover {
   color: #fff !important;
-  background-color: var(--inversion-purple) !important; /* color of middle square in contact us section */
+  background-color: var(
+    --inversion-purple
+  ) !important; /* color of middle square in contact us section */
 }
 .w3-yellow,
 .w3-hover-yellow:hover {
@@ -1331,7 +1341,9 @@ a {
 .w3-white,
 .w3-hover-white:hover {
   color: var(--inversion-orange) !important; /* color of text under pictures */
-  background-color: var(--dark-grey) !important; /* background color of text area under pictures */
+  background-color: var(
+    --dark-grey
+  ) !important; /* background color of text area under pictures */
 }
 .w3-black,
 .w3-hover-black:hover {
@@ -1343,7 +1355,9 @@ a {
 .w3-gray,
 .w3-hover-gray:hover {
   color: white !important; /* additional links text color */
-  background-color: var(--inversion-purple) !important; /* color of rectangle around additional links */
+  background-color: var(
+    --inversion-purple
+  ) !important; /* color of rectangle around additional links */
 }
 
 .add-links-header {
@@ -1354,7 +1368,9 @@ a {
 .w3-hover-light-grey:hover,
 .w3-light-gray,
 .w3-hover-light-gray:hover {
-  color: var(--inversion-orange) !important; /* changes color of text located within the body tag */
+  color: var(
+    --inversion-orange
+  ) !important; /* changes color of text located within the body tag */
   background-color: #000000 !important; /* background color of website */
 }
 .w3-dark-grey,
