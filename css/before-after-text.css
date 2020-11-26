@@ -1,0 +1,33 @@
+.kitchen-bath-div {
+  /* border: aqua solid; */
+}
+
+.before-after-div {
+  /* border: pink solid; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.kitchen-bath-text {
+  /* border: red solid; */
+  margin: 0;
+}
+
+.before-after-img {
+  /* border: purple solid; */
+}
+
+.before-text {
+  /* border: green solid; */
+  margin: 0;
+  padding: 0;
+}
+
+.after-text {
+  /* border: orange solid; */
+  margin: 0;
+  padding: 0;
+}
