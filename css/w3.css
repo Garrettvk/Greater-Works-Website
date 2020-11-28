@@ -77,6 +77,8 @@ a {
   border-bottom-width: var(--linkBorderHeight);
   border-right-width: 0;
   border-top-width: 0;
+
+  width: 100%; /* Makes purple box around additional links all the same size */
 }
 a:active,
 a:hover {
@@ -361,7 +363,7 @@ a {
   display: inline-block;
   padding-left: 8px;
   padding-right: 8px;
-  text-align: center;
+  text-align: left; /* moves text of additional links to the left */
 }
 .w3-badge {
   border-radius: 50%;
