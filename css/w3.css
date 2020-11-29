@@ -31,6 +31,21 @@ textarea {
   background-color: var(--dark-grey);
 }
 
+/* GREATER WORKS title at top of page */
+.gw-title {
+  font-family: 'Audiowide', cursive;
+}
+
+/* selector for both titles at top of homepage */
+.gw-title, .construction-title {
+  text-align: center;
+  font-size: 35px;
+  
+  /* removes margin that is added by default */
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 article,
 aside,
 details,

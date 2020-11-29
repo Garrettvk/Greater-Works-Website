@@ -1,7 +1,7 @@
 make contact squares same size
-
-change bottom so that purple stretches across and gradient only affects text
+    padding might be preventing height: 100%;
+    it could also be the margin thats added by default
 
 try and find free fonts similar to the business card
 
-back background of marquee black
+change font across the whole page.
