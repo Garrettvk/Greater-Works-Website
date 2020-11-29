@@ -31,13 +31,12 @@ textarea {
   background-color: var(--dark-grey);
 }
 
-/* GREATER WORKS title at top of page */
-.gw-title {
+.header-text, .gw-title, .contact, label, .add-links-header {
   font-family: 'Audiowide', cursive;
 }
 
-/* selector for both titles at top of homepage */
-.gw-title, .construction-title {
+/* selector for title at top of homepage */
+.gw-title {
   text-align: center;
   font-size: 35px;
   

@@ -5,3 +5,7 @@ make contact squares same size
 try and find free fonts similar to the business card
 
 change font across the whole page.
+
+fix space between picture and text of Design | Build square
+
+make welcome picture the same size
