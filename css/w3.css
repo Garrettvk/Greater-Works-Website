@@ -411,6 +411,7 @@ a {
   transition: opacity 0s;
 }
 .w3-input {
+  color: white;
   padding: 8px;
   display: block;
   border: none;
