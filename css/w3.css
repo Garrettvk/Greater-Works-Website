@@ -31,7 +31,7 @@ textarea {
   background-color: var(--dark-grey);
 }
 
-.header-text, .gw-title, .contact, label, .add-links-header {
+.gw-title {
   font-family: 'Audiowide', cursive;
 }
 
