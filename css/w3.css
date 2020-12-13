@@ -33,25 +33,24 @@ textarea {
 
 /* selector for title at top of homepage */
 .gw-title {
-
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 
   text-align: center;
-  
+
   /* removes margin that is added by default */
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
 .gw-title-top {
-    text-decoration: underline;
-    font-size: 35px;
+  text-decoration: underline;
+  font-size: 35px;
 }
 
 .gw-title-bottom {
-    letter-spacing: 12px;
-    font-size: 20px;
-  line-height: .5;
+  letter-spacing: 12px;
+  font-size: 20px;
+  line-height: 0.5;
 }
 
 article,
@@ -93,7 +92,12 @@ a {
   text-decoration: none; /* remove underline from link */
 
   /* add color gradient to a tags */
-  border-image: linear-gradient(70deg,var(--inversion-orange) 35%,var(--inversion-purple)) 1;
+  border-image: linear-gradient(
+      70deg,
+      var(--inversion-orange) 35%,
+      var(--inversion-purple)
+    )
+    1;
 
   /* size of color gradient */
   border-left-width: 0;
