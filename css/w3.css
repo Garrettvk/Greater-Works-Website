@@ -31,18 +31,27 @@ textarea {
   background-color: var(--dark-grey);
 }
 
-.gw-title {
-  font-family: 'Audiowide', cursive;
-}
-
 /* selector for title at top of homepage */
 .gw-title {
+
+  font-family: 'Audiowide', cursive;
+
   text-align: center;
-  font-size: 35px;
   
   /* removes margin that is added by default */
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.gw-title-top {
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+.gw-title-bottom {
+    letter-spacing: 12px;
+    font-size: 20px;
+  line-height: .5;
 }
 
 article,
