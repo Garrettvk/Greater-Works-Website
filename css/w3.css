@@ -26,6 +26,13 @@ body {
   margin: 0;
 }
 
+.gwc-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+}
+
 input,
 textarea {
   background-color: var(--dark-grey);
@@ -760,6 +767,9 @@ a {
   }
 }
 @media (max-width: 600px) {
+  .gwc-logo {
+    width: 90vw;
+  }
   .w3-modal-content {
     margin: 0 10px;
     width: auto !important;
