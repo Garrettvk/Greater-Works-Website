@@ -1,0 +1,10 @@
+.check-mark {
+    display: block;
+    margin: 20px auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: white;
+}

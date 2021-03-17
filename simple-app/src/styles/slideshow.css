@@ -1,0 +1,76 @@
+section {
+    /* border: solid pink 1px; */
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    height: 60vh; /* height of slideshow container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    /* border: solid red 1px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+    height: 20vw;
+    border-radius: 10px;
+}
+
+.left-arrow,
+.right-arrow {
+    font-size: 5vw;
+    position: absolute;
+    color: white;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.right-arrow {
+    right: 15vw;
+}
+
+.left-arrow {
+    left: 15vw;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+@media only screen and (max-width: 800px) {
+    .image {
+        height: 40vw;
+        width: 65vw;
+    }
+
+    .right-arrow {
+        right: 3vw;
+    }
+
+    .left-arrow {
+        left: 3vw;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 7vw;
+    }
+
+    .slider {
+        height: 50vh; /* height of slideshow container */
+    }
+}
