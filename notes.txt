@@ -1,0 +1,7 @@
+make sure emailjs is sending emails to greater works email
+
+make send message button wider on mobile
+
+make the gradient of links only on bottom
+
+test on mobile again
