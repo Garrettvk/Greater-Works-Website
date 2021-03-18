@@ -25,7 +25,7 @@ const useForm = (callback, validate) => {
 
         console.log('email function ran')
 
-        emailjs.sendForm('service_i0yqoos', 'template_t4ad8np', value, 'user_WkRD847UjrernWvx03HkQ')
+        emailjs.sendForm('service_i0yqoos', 'template_gwc', value, 'user_WkRD847UjrernWvx03HkQ')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {

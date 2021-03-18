@@ -151,12 +151,17 @@ function App() {
                 <div className="contact__info">
 
                     <div className="contact__email">
-                        <i className="fa fa-envelope contact__icon"></i>
+                        <a class="mailto" href="mailto:greaterworks805@gmail.com">
+                            <i className="fa fa-envelope contact__icon"></i>
+                        </a>
+
                         <p>greaterworks805@gmail.com</p>
                     </div>
 
                     <div className="contact__address">
-                        <i className="fa fa-map-marker contact__icon"></i>
+                        <a href="https://goo.gl/maps/B8qFfzo218DiKi867" className="mapto">
+                            <i className="fa fa-map-marker contact__icon"></i>
+                        </a>
                         <p>Greater Works Construction, Inc.</p>
                         <p>7343 El Camino Real, Suite 223</p>
                         <p>Atascadero, CA 93422</p>
@@ -164,7 +169,9 @@ function App() {
                     </div>
 
                     <div className="contact__phone">
-                        <i className="fa fa-phone contact__icon"></i>
+                        <a class="callto" href="tel:18054007129';">
+                            <i className="fa fa-phone contact__icon"></i>
+                        </a>
                         <p>(805) 400-7129</p>
                     </div>
 

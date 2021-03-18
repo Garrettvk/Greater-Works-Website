@@ -9,21 +9,40 @@ body {
     background-color: black;
 }
 
+/* elements with no text-decoration */
+.mailto,
+a,
+a:visited,
+.links__content a {
+    text-decoration: none;
+}
+
+/* a tags with no gradient */
+.mailto,
+.callto,
+.mapto {
+    border-width: 0;
+}
+
 /* elements with color gradient */
 a,
 .links__content a {
+    /* add color gradient to a tags */
     border-image: linear-gradient(70deg, #ff682a 35%, #882cf8) 1;
+
+    /* size of color gradient */
+    border-left-width: 0;
+    border-bottom-width: 1;
+    border-right-width: 0;
+    border-top-width: 0;
 }
 
 a {
     border-bottom: 1px solid;
-    text-decoration: none;
     border-bottom-width: 3px;
 }
 
 a:visited {
-    /* removes purple text from visted links */
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -244,6 +263,10 @@ ul {
     .contact__info div {
         margin-bottom: 10px;
     }
+
+    form button {
+        width: 170px !important;
+    }
 }
 
 p,
@@ -359,7 +382,6 @@ form button i {
 }
 
 .links__content a {
-    text-decoration: none;
     padding: 0 8px;
     margin-bottom: 16px;
     font-size: 12px;
