@@ -27,6 +27,9 @@ a:visited,
 /* elements with color gradient */
 a,
 .links__content a {
+    background-color: transparent;
+    border-bottom: 1px solid;
+
     /* add color gradient to a tags */
     border-image: linear-gradient(70deg, #ff682a 35%, #882cf8) 1;
 
@@ -35,11 +38,6 @@ a,
     border-bottom-width: 1;
     border-right-width: 0;
     border-top-width: 0;
-}
-
-a {
-    border-bottom: 1px solid;
-    border-bottom-width: 3px;
 }
 
 a:visited {
