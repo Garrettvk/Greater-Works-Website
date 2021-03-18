@@ -1,9 +1,0 @@
-make contact squares same size
-    padding might be preventing height: 100%;
-    it could also be the margin thats added by default
-
-try and find free fonts similar to the business card
-
-change font across the whole page.
-
-make welcome picture the same size

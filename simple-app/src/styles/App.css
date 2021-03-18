@@ -1,0 +1,411 @@
+* {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    animation: fadeIn 2s /* how long the animation takes; */;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: black;
+}
+
+/* elements with no text-decoration */
+.mailto,
+a,
+a:visited,
+.links__content a {
+    text-decoration: none;
+}
+
+/* a tags with no gradient */
+.mailto,
+.callto,
+.mapto {
+    border-width: 0;
+}
+
+/* elements with color gradient */
+a,
+.links__content a {
+    background-color: transparent;
+    border-bottom: 1px solid;
+
+    /* add color gradient to a tags */
+    border-image: linear-gradient(70deg, #ff682a 35%, #882cf8) 1;
+
+    /* size of color gradient */
+    border-left-width: 0;
+    border-bottom-width: 1;
+    border-right-width: 0;
+    border-top-width: 0;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+.container,
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6 {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas:
+        'logo logo logo'
+        'image1 image2 image3'
+        'image1 before-after image3'
+        'content1 content2 content3'
+        'image4 image5 image6'
+        'content4 content5 content6'
+        'slideshow slideshow slideshow'
+        'contact contact contact'
+        'contact__form contact__form contact__form'
+        'links links links';
+    grid-gap: 0.2rem;
+}
+
+/* container for before and after text */
+.before-after {
+    grid-area: before-after;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* before and after text */
+.before-after p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.slider {
+    grid-area: slideshow;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image6 {
+    width: 100%;
+    object-fit: cover;
+    height: 15vw;
+    border-radius: 5px;
+}
+
+.logo {
+    grid-area: logo;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.image4 {
+    grid-area: image4;
+}
+
+.image5 {
+    grid-area: image5;
+}
+
+.image6 {
+    grid-area: image6;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6 {
+    margin-bottom: 25px; /* adds space below content areas */
+    padding: 15px; /* adds space on the inside of content areas */
+}
+
+/* elements with dark gray background */
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6,
+.contact__email,
+.contact__phone,
+input,
+textarea,
+.links {
+    background: #242424;
+}
+
+.content__body,
+ul {
+    color: #ffffff;
+}
+
+#content1 {
+    grid-area: content1;
+}
+
+#content2 {
+    grid-area: content2;
+}
+
+#content3 {
+    grid-area: content3;
+}
+
+#content4 {
+    grid-area: content4;
+}
+
+#content5 {
+    grid-area: content5;
+}
+
+#content6 {
+    grid-area: content6;
+}
+
+.form-container {
+    grid-area: contact__form;
+}
+
+.links {
+    grid-area: links;
+}
+
+.content__title,
+.content__contact {
+    color: #019a01;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+            'logo'
+            'image1'
+            'content1'
+            'image2'
+            'before-after'
+            'content2'
+            'image3'
+            'content3'
+            'image4'
+            'content4'
+            'image5'
+            'content5'
+            'image6'
+            'content6'
+            'slideshow'
+            'contact'
+            'contact__form'
+            'links';
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5,
+    .image6 {
+        width: 100%;
+        object-fit: cover;
+        height: 50vw;
+        border-radius: 5px;
+    }
+
+    .logo {
+        grid-area: logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+
+    .contact__info {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .contact__info div {
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 170px !important;
+    }
+}
+
+p,
+input,
+textarea,
+a {
+    /* elements with the color white */
+    color: #ffffff;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact__info div {
+    width: 100%;
+    text-align: center;
+}
+
+/* elements with purple background color */
+.contact__address,
+.links a {
+    background-color: #882cf8;
+}
+
+/* elements with the color orange */
+.contact__icon,
+.contact__title,
+label,
+.links__title,
+.before-after p,
+.content__title,
+.content__contact {
+    color: #ff682a;
+}
+
+.contact__title {
+    font-size: 20px;
+}
+
+.contact__icon {
+    font-size: 35px !important;
+}
+
+.contact__address p {
+    margin: 0;
+}
+
+.fa-map-marker {
+    margin-bottom: 16px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid #767676;
+}
+
+label {
+    margin: 16px 0 3px 0;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input,
+textarea {
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input,
+textarea,
+form button {
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ff682a;
+    text-align: center;
+    margin: 16px 0px;
+    width: 150px;
+    font-size: 15px;
+}
+
+/* style of error messages */
+form p {
+    color: red;
+    margin: 0;
+}
+
+/* style of airplane icon */
+form button i {
+    padding-right: 10px;
+}
+
+.links {
+    padding: 32px 16px;
+}
+
+.links__title {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.links__content a {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    border-bottom: 1px solid;
+    border-bottom-width: 3px;
+}
+
+.links__content {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    /* keyframes define the start and end of animation */
+
+    from {
+        /* starting point */
+        opacity: 0; /* start completely transparent */
+        transform: translateX(-1vw) /* start a little to the left */;
+    }
+
+    to {
+        /* ending point */
+        opacity: 1; /* end completely solid */
+        transform: translateX(
+            0
+        ); /* end where html elements would normally be */
+    }
+}
