@@ -1,3 +1,0 @@
-mobile still has gradient around a tags
-
-test on mobile again
