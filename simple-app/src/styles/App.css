@@ -379,12 +379,14 @@ form button i {
     margin-bottom: 16px;
 }
 
+/* additional links a tags */
 .links__content a {
     padding: 0 8px;
     margin-bottom: 16px;
     font-size: 12px;
     border-bottom: 1px solid;
     border-bottom-width: 3px;
+    text-transform: capitalize;
 }
 
 .links__content {
