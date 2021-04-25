@@ -17,6 +17,8 @@ import SC7b from "images/slideshow/SC7b.jpg";
 import SC8b from "images/slideshow/SC8b.jpg";
 import SF1a from "images/slideshow/SF1a.jpg";
 import SF1b from "images/slideshow/SF1b.jpg";
+import house from "images/slideshow/house.jpg";
+import stairs from "images/slideshow/stairs.jpg";
 
 export const SliderData = [
     {
@@ -75,5 +77,11 @@ export const SliderData = [
     },
     {
         image: SF1b
+    },
+    {
+        image: house
+    },
+    {
+        image: stairs
     }
 ]
