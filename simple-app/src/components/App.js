@@ -147,7 +147,7 @@ function App() {
 
             <ImageSlider slides={SliderData} />
 
-            {/* <video src={demolitionVideo} muted autoPlay loop /> */}
+            <video className="demolitionVideo" src={demolitionVideo} muted autoPlay loop />
 
             <div className="contact">
 
