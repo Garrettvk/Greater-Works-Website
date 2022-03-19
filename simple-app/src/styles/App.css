@@ -208,15 +208,6 @@ ul {
     color: #019a01;
 }
 
-.demolitionVideo {
-    grid-area: demolitionVideo;
-    margin: 0 auto;
-    height: 696px;
-    object-fit: none;
-    width: 100%;
-    object-position: 50% -489px;
-}
-
 @media only screen and (max-width: 800px) {
     .container {
         grid-template-columns: 1fr;
@@ -236,6 +227,7 @@ ul {
             'content5'
             'image6'
             'content6'
+            'demolitionVideo'
             'slideshow'
             'contact'
             'contact__form'

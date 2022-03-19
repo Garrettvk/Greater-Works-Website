@@ -1,3 +1,4 @@
+import { DemolitionVideo } from './DemolitionVideo';
 import 'styles/App.css';
 
 // image imports
@@ -8,9 +9,6 @@ import design from "images/design1.jpg";
 import rails from "images/rails1.jpg";
 import trim from "images/trim1.jpg";
 import repairs from "images/repairs1.jpg";
-
-// videos
-import demolitionVideo from "videos/demolitionVideo.mp4";
 
 // components
 import Form from 'components/form/Form';
@@ -147,7 +145,7 @@ function App() {
 
             <ImageSlider slides={SliderData} />
 
-            <video className="demolitionVideo" src={demolitionVideo} muted autoPlay loop />
+            <DemolitionVideo />
 
             <div className="contact">
 

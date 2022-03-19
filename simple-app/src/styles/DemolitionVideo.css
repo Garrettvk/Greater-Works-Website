@@ -1,0 +1,30 @@
+/* container for demolitionVideo */
+.demolitionVideo {
+    grid-area: demolitionVideo;
+    margin: 0 auto;
+    max-width: 1079px;
+}
+
+/* size a position of video */
+.demolitionVideo > video {
+    height: 696px;
+    object-fit: none;
+    width: 100%;
+    object-position: 50% -489px;
+}
+
+/* size and position of content under video */
+.demolitionVideo__content{
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* change size of video to look better on mobile */
+    .demolitionVideo > video {
+        height: auto;
+        object-fit: contain;
+        object-position: unset;
+      }
+}
+  
