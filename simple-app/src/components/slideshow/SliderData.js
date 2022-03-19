@@ -19,69 +19,113 @@ import SF1a from "images/slideshow/SF1a.jpg";
 import SF1b from "images/slideshow/SF1b.jpg";
 import house from "images/slideshow/house.jpg";
 import stairs from "images/slideshow/stairs.jpg";
+import bathtub from "images/slideshow/13262.jpeg";
+import Attachment_2 from "images/slideshow/Attachment 2.jpeg";
+import Attachment_3 from "images/slideshow/Attachment 3.jpeg";
+import Attachment_4 from "images/slideshow/Attachment 4.jpeg";
+import Attachment_5 from "images/slideshow/Attachment 5.jpeg";
+import Attachment_6 from "images/slideshow/Attachment 6.jpeg";
+import Attachment_7 from "images/slideshow/Attachment 7.jpeg";
+import Attachment from "images/slideshow/Attachment.jpeg";
+import IMG_20211104_095637399 from "images/slideshow/IMG_20211104_095637399.jpeg";
+import staircase from "images/slideshow/43396~2.jpg";
+import shower from "images/slideshow/shower.jpg";
 
 export const SliderData = [
     {
-        image: C1a
+        image: C1a,
     },
     {
-        image: C2a
+        image: C2a,
     },
     {
-        image: C3a
+        image: C3a,
     },
     {
-        image: C4a
+        image: C4a,
     },
     {
-        image: C5a
+        image: C5a,
     },
     {
-        image: C6a
+        image: C6a,
     },
     {
-        image: marquee1
+        image: marquee1,
     },
     {
-        image: marquee5
+        image: marquee5,
     },
     {
-        image: marquee9
+        image: marquee9,
     },
     {
-        image: marquee13
+        image: marquee13,
     },
     {
-        image: SC1b
+        image: SC1b,
     },
     {
-        image: SC2b
+        image: SC2b,
     },
     {
-        image: SC3b
+        image: SC3b,
     },
     {
-        image: SC4b
+        image: SC4b,
     },
     {
-        image: SC6b
+        image: SC6b,
     },
     {
-        image: SC7b
+        image: SC7b,
     },
     {
-        image: SC8b
+        image: SC8b,
     },
     {
-        image: SF1a
+        image: SF1a,
     },
     {
-        image: SF1b
+        image: SF1b,
     },
     {
-        image: house
+        image: house,
     },
     {
-        image: stairs
-    }
-]
+        image: stairs,
+    },
+    {
+        image: bathtub,
+    },
+    {
+        image: Attachment_2,
+    },
+    {
+        image: Attachment_3,
+    },
+    {
+        image: Attachment_4,
+    },
+    {
+        image: Attachment_5,
+    },
+    {
+        image: Attachment_6,
+    },
+    {
+        image: Attachment_7,
+    },
+    {
+        image: Attachment,
+    },
+    {
+        image: IMG_20211104_095637399,
+    },
+    {
+        image: staircase,
+    },
+    {
+        image: shower,
+    },
+];
