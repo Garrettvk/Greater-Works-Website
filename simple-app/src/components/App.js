@@ -9,6 +9,9 @@ import rails from "images/rails1.jpg";
 import trim from "images/trim1.jpg";
 import repairs from "images/repairs1.jpg";
 
+// videos
+import demolitionVideo from "videos/demolitionVideo.mp4";
+
 // components
 import Form from 'components/form/Form';
 import ImageSlider from 'components/slideshow/ImageSlider';
@@ -143,6 +146,8 @@ function App() {
             </div>
 
             <ImageSlider slides={SliderData} />
+
+            {/* <video src={demolitionVideo} muted autoPlay loop /> */}
 
             <div className="contact">
 
