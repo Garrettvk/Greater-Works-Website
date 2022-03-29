@@ -30,6 +30,8 @@ import Attachment from "images/slideshow/Attachment.jpeg";
 import IMG_20211104_095637399 from "images/slideshow/IMG_20211104_095637399.jpeg";
 import staircase from "images/slideshow/43396~2.jpg";
 import shower from "images/slideshow/shower.jpg";
+import IMG_20170530_0947599 from "images/slideshow/IMG_20170530_0947599.jpeg";
+import IMG_20170518_0931054 from "images/slideshow/IMG_20170518_0931054.jpeg";
 
 export const SliderData = [
     {
@@ -127,5 +129,11 @@ export const SliderData = [
     },
     {
         image: shower,
+    },
+    {
+        image: IMG_20170530_0947599,
+    },
+    {
+        image: IMG_20170518_0931054,
     },
 ];
