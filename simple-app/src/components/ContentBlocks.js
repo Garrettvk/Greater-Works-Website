@@ -7,9 +7,13 @@ import design from "./../images/design1.jpg";
 import rails from "./../images/rails1.jpg";
 import trim from "./../images/trim1.jpg";
 import repairs from "./../images/repairs1.jpg";
+import owner from "./../images/WVK2020.jpeg";
 
 // components
 import { ContentBlock } from "./ContentBlock";
+import { DemolitionVideo } from "./DemolitionVideo";
+import ImageSlider from "./slideshow/ImageSlider";
+import { SliderData } from "./slideshow/SliderData";
 
 export function ContentBlocks() {
     return (
@@ -108,6 +112,35 @@ export function ContentBlocks() {
                     "Call or text, we can help.",
                 ]}
                 phone={<a href="tel:18054007129">(805) 400-7129</a>}
+            />
+
+            {/* seventh image */}
+            <ContentBlock
+                video={<DemolitionVideo/>}
+                alt={"staircase"}
+                className={"image7"}
+                id={"content7"}
+                label={"Demolition Interior and Exterior"}
+                body={[
+                    "We offer demolition services including water damage removal, drywall removal, wall paper removal, precision counter top cutting, cabinetry, concrete cutting/removal and more...",
+                ]}
+            />
+
+            {/* eighth image */}
+            <ContentBlock
+                slideshow={<ImageSlider slides={SliderData} />}
+            />
+
+            {/* ninth image */}
+            <ContentBlock
+                image={owner}
+                alt={"man holding on for dear life"}
+                className={"image9"}
+                id={"content9"}
+                label={"Escrow Repair Specialists"}
+                body={[
+                    "Thank you for looking at our website. My building background started early, from tree houses with neighborhood kids to my first Building Permit in 2001. It has been a lifetime of experience and a journey well traveled. My crew and I look forward to serving you! CSLB General Contractor No.1040332",
+                ]}
             />
         </>
     );

@@ -1,19 +1,16 @@
 section {
-    /* border: solid pink 1px; */
     width: 100%;
 }
 
 .slider {
-    position: relative;
-    height: 60vh; /* height of slideshow container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    --dimension: 250px;
+    width: var(--dimension);
+    height: var(--dimension);
+    margin: 0 auto;
 }
 
 /* slideshow images */
 .image {
-    /* border: solid red 1px; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -22,24 +19,6 @@ section {
     max-height: 30vw;
     border-radius: 10px;
     max-width: 50vw;
-}
-
-.left-arrow,
-.right-arrow {
-    font-size: 5vw;
-    position: absolute;
-    color: white;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-
-.right-arrow {
-    right: 15vw;
-}
-
-.left-arrow {
-    left: 15vw;
 }
 
 .slide {
@@ -51,6 +30,8 @@ section {
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.08);
+    width: 90%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 800px) {

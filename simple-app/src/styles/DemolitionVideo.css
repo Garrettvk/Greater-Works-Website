@@ -7,10 +7,11 @@
 
 /* size a position of video */
 .demolitionVideo > video {
-    height: 696px;
-    object-fit: none;
+    height: 15vw;
+    object-fit: cover;
     width: 100%;
-    object-position: 50% -489px;
+    object-position: 0px 33%;
+    border-radius: 5px;
 }
 
 /* size and position of content under video */
@@ -23,8 +24,9 @@
     /* change size of video to look better on mobile */
     .demolitionVideo > video {
         height: auto;
-        object-fit: contain;
-        object-position: unset;
+        object-fit: cover;
+        object-position: 0 -280px;
+        height: 50vw;
       }
 }
   

@@ -13,10 +13,6 @@ function ImageSlider({ slides }) {
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
 
-    const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1)
-    }
-
     // goes to next slide ever 7 seconds
     useEffect(() => {
         const interval = setInterval(() => {
@@ -27,10 +23,6 @@ function ImageSlider({ slides }) {
 
     return (
         <section className="slider">
-
-            <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-
-            <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
 
             {
                 SliderData.map((slide, index) => {

@@ -59,7 +59,7 @@ a:visited {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas:
         'logo logo logo'
         'image1 image2 image3'
@@ -67,6 +67,8 @@ a:visited {
         'content1 content2 content3'
         'image4 image5 image6'
         'content4 content5 content6'
+        'image7 image8 image9'
+        'content7 content8 content9'
         'demolitionVideo demolitionVideo demolitionVideo'
         'slideshow slideshow slideshow'
         'contact contact contact'
@@ -98,7 +100,10 @@ a:visited {
 .image3,
 .image4,
 .image5,
-.image6 {
+.image6,
+.image7,
+.image8,
+.image9 {
     width: 100%;
     object-fit: cover;
     height: 15vw;
@@ -137,6 +142,18 @@ a:visited {
     grid-area: image6;
 }
 
+.image7 {
+    grid-area: image7;
+}
+
+.image8 {
+    grid-area: image8;
+}
+
+.image9 {
+    grid-area: image9;
+}
+
 .contact {
     grid-area: contact;
 }
@@ -146,7 +163,10 @@ a:visited {
 #content3,
 #content4,
 #content5,
-#content6 {
+#content6,
+#content7,
+#content8,
+#content9 {
     margin-bottom: 25px; /* adds space below content areas */
     padding: 15px; /* adds space on the inside of content areas */
 }
@@ -158,6 +178,9 @@ a:visited {
 #content4,
 #content5,
 #content6,
+#content7,
+#content8,
+#content9,
 .contact__email,
 .contact__phone,
 input,
@@ -195,6 +218,18 @@ ul {
     grid-area: content6;
 }
 
+#content7 {
+    grid-area: content7;
+}
+
+#content8 {
+    grid-area: content8;
+}
+
+#content9 {
+    grid-area: content9;
+}
+
 .form-container {
     grid-area: contact__form;
 }
@@ -209,9 +244,18 @@ ul {
 }
 
 @media only screen and (max-width: 800px) {
+
+    img.image9 {
+        margin-top: 71%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+  
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
         grid-template-areas:
             'logo'
             'image1'
@@ -227,8 +271,12 @@ ul {
             'content5'
             'image6'
             'content6'
-            'demolitionVideo'
-            'slideshow'
+            'image7'
+            'content7'
+            'image8'
+            'content8'
+            'image9'
+            'content9'
             'contact'
             'contact__form'
             'links';
@@ -239,7 +287,10 @@ ul {
     .image3,
     .image4,
     .image5,
-    .image6 {
+    .image6,
+    .image7,
+    .image8,
+    .image9 {
         width: 100%;
         object-fit: cover;
         height: 50vw;
