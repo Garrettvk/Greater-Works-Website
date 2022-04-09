@@ -134,12 +134,12 @@ export function ContentBlocks() {
             {/* ninth image */}
             <ContentBlock
                 image={owner}
-                alt={"man holding on for dear life"}
+                alt={"picture of owner"}
                 className={"image9"}
                 id={"content9"}
-                label={"Escrow Repair Specialists"}
+                label={"About The Owner"}
                 body={[
-                    "Thank you for looking at our website. My building background started early, from tree houses with neighborhood kids to my first Building Permit in 2001. It has been a lifetime of experience and a journey well traveled. My crew and I look forward to serving you! CSLB General Contractor No.1040332",
+                    "Thank you for looking at our website. My building background started early, from tree houses with neighborhood kids, helping my father -a master craftsman- as a young man, to my first Building Permit in 2001. It has been a lifetime of experience and a journey well traveled. My crew and I look forward to serving you! CSLB General Contractor No.1040332",
                 ]}
             />
         </>

@@ -25,7 +25,7 @@
     .demolitionVideo > video {
         height: auto;
         object-fit: cover;
-        object-position: 0 -280px;
+        object-position: 0 -193px;
         height: 50vw;
       }
 }
